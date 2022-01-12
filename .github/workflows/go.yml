@@ -5,11 +5,9 @@ on:
   push:
     branches: 
       - go_test
-      - main
   pull_request:
     branches:
       - go_test
-      - main
 
 jobs:
 
