@@ -25,6 +25,9 @@ jobs:
       with:
         go-version: 1.17
         working-directory: go_web
+        
+    - name: we
+      run: pwd
 
     - name: Lint
       run: |
