@@ -3,13 +3,14 @@ name: test Go
 
 on:
   push:
-    branches: 
-    - main
+    branches:
     - go_test
+    - main
+
   pull_request:
     branches:
+    - go_test    
     - main
-    - go_test
 
 jobs:
 
