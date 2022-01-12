@@ -4,11 +4,11 @@ name: test Go
 on:
   push:
     branches:
-    - 'go_test'
+    - '*'
 
   pull_request:
     branches:
-    - 'go_test'
+    - '*'
 
 jobs:
 
