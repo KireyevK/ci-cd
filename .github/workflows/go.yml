@@ -24,14 +24,15 @@ jobs:
       uses: actions/setup-go@v2
       with:
         go-version: 1.17
-        working-directory: go_web
         
     - name: we
       run: pwd
 
     - name: Lint
       run: |
-        curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.26.0        
+        curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.26.0
+        cd go_web
+        pwd
         golangci-lint run
 
 #        cd go_web
