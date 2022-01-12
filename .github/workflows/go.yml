@@ -27,7 +27,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         ref: go_test
-        workdir: go_web/
+        working-directory: go_web
 
     - name: Lint
       run: |
