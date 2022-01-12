@@ -24,7 +24,9 @@ jobs:
         go-version: 1.17
         
     - name: chng Branch
-      uses: KireyevK/ci-cd/blob/go_test/go_web/checkout@v2
+      uses: actions/checkout@v2
+      with:
+        ref: go_test
 
     - name: Lint
       run: |
